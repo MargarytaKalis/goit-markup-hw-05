@@ -488,9 +488,9 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="button close-btn">
+        <button class="button close-btn" type="button">
           <svg class="close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -500,8 +500,14 @@
           <div class="form-wrapper-cont">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-cont">
-              <input class="modal-input" type="text" id="user-name" required />
-              <svg class="modal-icon" width="18" height="18">
+              <input
+                class="modal-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
@@ -510,8 +516,13 @@
           <div class="form-wrapper-cont">
             <label class="modal-form-label" for="user-tel">Phone</label>
             <div class="modal-cont">
-              <input class="modal-input" type="tel" id="user-tel" required />
-              <svg class="modal-icon" width="18" height="18">
+              <input
+                class="modal-input"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+              />
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
@@ -524,19 +535,23 @@
                 class="modal-input"
                 type="email"
                 id="user-email"
+                name="user-email"
                 required
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
           </div>
           <div class="form-wrapper-cont-coment">
-            <label class="modal-form-label-coment" for="coment">Comment</label>
+            <label class="modal-form-label-coment" for="user-comment"
+              >Comment</label
+            >
             <textarea
               class="modal-textarea"
-              id="coment"
+              id="user-comment"
               placeholder="Text input"
+              name="user-comment"
             ></textarea>
           </div>
 
@@ -544,9 +559,11 @@
             <input
               class="input-checkbox visually-hidden"
               type="checkbox"
-              id="user-checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
             />
-            <label for="user-checkbox" class="label-checkbox"
+            <label for="user-privacy" class="label-checkbox"
               ><span class="custom-checkbox">
                 <svg class="icon-vector" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
