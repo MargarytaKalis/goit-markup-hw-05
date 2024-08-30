@@ -473,14 +473,22 @@
         </div>
         <div></div>
       </div>
-      <p class="footer-paragraph-subscribe">Subscribe</p>
-      <div class="subscribe-cont">
-        <form>
-          <label for=""><input type="text" id="" /></label>
+      <div class="main-subscribe-cont">
+        <p class="footer-paragraph-subscribe">Subscribe</p>
+        <form class="form-footer">
+          <label class="form-footer-label" for=""
+            ><input
+              class="form-footer-input"
+              type="email"
+              id=""
+              name="e-mail"
+              placeholder="E-mail"
+          /></label>
 
           <button class="subscribe-btn" type="submit">
-            <svg>
-              <use></use>
+            Subscribe
+            <svg class="footer-svg-sbscrb" width="24" height="24">
+              <use href="./images/icons.svg#icon-Frame-3"></use>
             </svg>
           </button>
         </form>
@@ -488,7 +496,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="button close-btn" type="button">
           <svg class="close-svg" width="8" height="8">
