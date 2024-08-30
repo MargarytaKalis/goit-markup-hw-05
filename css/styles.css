@@ -626,11 +626,16 @@ bottom: 8px;
  
 }
 
+.button:hover>svg,
+button:focus>svg {
+    fill: #ffffff;
+}
+
 .close-btn:hover,
 .close-btn:focus {
     background-color: #404bbf;
    border: 0;
-fill: #ffffff
+
    
 }
 
